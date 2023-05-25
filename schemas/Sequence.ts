@@ -15,6 +15,17 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
+            title: "Images",
+            type: "array",
+            name: "images",
+            of: [
+                {
+                    title: "Image",
+                    type: "image"
+                }
+            ]
+        },
+        {
             title: "Slides",
             type: "array",
             name: "slides",

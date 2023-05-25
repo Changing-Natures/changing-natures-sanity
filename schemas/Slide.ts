@@ -31,19 +31,19 @@ export default {
         {
             title: "Content (English)",
             name: "content_en",
-            type: "contentEditor",
+            type: "slideEditor",
             group: ["en"]
         },
         {
             title: "Content (French)",
             name: "content_fr",
-            type: "contentEditor",
+            type: "slideEditor",
             group: ["fr"]
         },
         {
             title: "Content (German)",
             name: "content_de",
-            type: "contentEditor",
+            type: "slideEditor",
             group: ["de"]
         },
     ],
