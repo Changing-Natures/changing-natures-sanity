@@ -16,14 +16,62 @@ export default {
             name: 'imported',
             title: 'Imported',
         },
+        {
+            name: 'en',
+            title: 'English',
+        },
+        {
+            name: 'fr',
+            title: 'French',
+        },
+        {
+            name: 'de',
+            title: 'German',
+        },
     ],
     fields: [
         {
-            title: "Title",
+            title: "Title (English)",
             name: "title",
             type: "string",
             validation: (Rule: any) => Rule.required(),
-            group: ["local"],
+            group: ["imported", "en"],
+        },
+        {
+            title: "Title (French)",
+            name: "title_fr",
+            type: "string",
+            validation: (Rule: any) => Rule.required(),
+            group: ["imported", "fr"],
+        },
+        {
+            title: "Title (German)",
+            name: "title_de",
+            type: "string",
+            validation: (Rule: any) => Rule.required(),
+            group: ["imported", "de"],
+        },
+        {
+            title: "Story (English)",
+            name: 'story_en',
+            type: 'text',
+            readOnly: true,
+            group: ["imported", "en"]
+        },
+        {
+            title: "Story (French)",
+            name: 'story_fr',
+            type: 'text',
+            readOnly: true,
+            group: ["imported", "fr"]
+
+        },
+        {
+            title: "Story (German)",
+            name: 'story_de',
+            type: 'text',
+            readOnly: true,
+            group: ["imported", "de"]
         },
         {
             name: 'image',
@@ -49,30 +97,36 @@ export default {
         },
         {
             name: 'species',
-            type: 'string',
-            readOnly: true,
-            group: ["imported"]
-        },
-        {
-            name: 'story',
-            type: 'text',
-            readOnly: true,
-            group: ["imported"]
-        },
-        {
-            name: 'materials',
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
             group: ["imported"]
         },
         {
+            title: 'Raw materials',
+            name: 'rawMaterials',
+            type: 'array',
+            of: [{ type: 'string' }],
+            readOnly: true,
+            group: ["imported"]
+        },
+        {
+            title: 'Processed materials',
+            name: 'processedMaterials',
+            type: 'array',
+            of: [{ type: 'string' }],
+            readOnly: true,
+            group: ["imported"]
+        },
+        {
+            title: "Location",
             name: 'location',
             type: 'string',
             readOnly: true,
             group: ["imported"]
         },
         {
+            title: "Topics",
             name: 'topics',
             type: 'array',
             of: [{ type: 'string' }],
@@ -80,6 +134,7 @@ export default {
             group: ["imported"]
         },
         {
+            title: "Emotions",
             name: 'emotions',
             type: 'array',
             of: [{ type: 'string' }],
@@ -87,12 +142,14 @@ export default {
             group: ["imported"]
         },
         {
+            title: "Date",
             name: 'date',
             type: 'datetime',
             readOnly: true,
             group: ["imported"]
         },
         {
+            title: "Uploader name",
             name: 'uploaderName',
             type: 'string',
             readOnly: true,
