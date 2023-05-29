@@ -74,28 +74,22 @@ export default {
             group: ["imported", "de"]
         },
         {
-            name: 'image',
-            type: 'image',
-            fields: [
-                {
-                    name: 'caption',
-                    type: 'string'
-                },
-                {
-                    name: 'alt',
-                    type: 'string'
-                }
-            ],
+            title: "Media",
+            name: 'media',
+            type: 'array',
+            of: [{ type: 'string' }],
             readOnly: true,
             group: ["imported"]
         },
         {
+            title: "Habitat",
             name: 'habitat',
             type: 'string',
             readOnly: true,
             group: ["imported"],
         },
         {
+            title: "Species",
             name: 'species',
             type: 'array',
             of: [{ type: 'string' }],
