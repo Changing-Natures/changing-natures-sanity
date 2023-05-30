@@ -34,21 +34,18 @@ export default {
             title: "Title (English)",
             name: "title",
             type: "string",
-            validation: (Rule: any) => Rule.required(),
             group: ["imported", "en"],
         },
         {
             title: "Title (French)",
             name: "title_fr",
             type: "string",
-            validation: (Rule: any) => Rule.required(),
             group: ["imported", "fr"],
         },
         {
             title: "Title (German)",
             name: "title_de",
             type: "string",
-            validation: (Rule: any) => Rule.required(),
             group: ["imported", "de"],
         },
         {
@@ -102,7 +99,10 @@ export default {
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
-            group: ["imported"]
+            group: ["imported"],
+            options: {
+                layout: 'tags'
+            }
         },
         {
             title: 'Processed materials',
@@ -110,7 +110,10 @@ export default {
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
-            group: ["imported"]
+            group: ["imported"],
+            options: {
+                layout: 'tags'
+            }
         },
         {
             title: "Location",
@@ -125,7 +128,10 @@ export default {
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
-            group: ["imported"]
+            group: ["imported"],
+            options: {
+                layout: 'tags'
+            }
         },
         {
             title: "Emotions",
@@ -133,7 +139,10 @@ export default {
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
-            group: ["imported"]
+            group: ["imported"],
+            options: {
+                layout: 'tags'
+            }
         },
         {
             title: "Date",

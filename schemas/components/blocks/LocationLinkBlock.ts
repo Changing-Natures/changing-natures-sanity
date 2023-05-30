@@ -18,6 +18,7 @@ export default {
             title: 'Location',
             name: 'location',
             type: 'reference',
+            weak: true,
             to: [{ type: 'location' }],
             validation: (Rule: any) => Rule.required(),
         }

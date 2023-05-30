@@ -18,6 +18,7 @@ export default {
             title: 'Collection item',
             name: 'collectionItem',
             type: 'reference',
+            weak: true,
             to: [{ type: 'collectionItem' }],
             validation: (Rule: any) => Rule.required(),
         }
