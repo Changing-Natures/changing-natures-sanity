@@ -57,22 +57,6 @@ export default {
                 }
             ]
         },
-        {
-            title: "Slides",
-            type: "array",
-            name: "slides",
-            of: [
-                {
-                    title: "Slide",
-                    type: "reference",
-                    to: [
-                        {
-                            type: "slide"
-                        }
-                    ]
-                }
-            ]
-        },
     ],
     preview: {
         select: {

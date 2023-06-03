@@ -168,6 +168,14 @@ export default {
             },
             validation: (Rule: any) => Rule.required(),
             group: ["local"]
+        },
+        {
+            title: "Pick up prompt",
+            name: "prompt",
+            type: "string",
+            description: "You see X on the ground. Max 80 characters",
+            validation: (Rule: any) => Rule.max(80),
+            group: ["local", "en"]
         }
     ],
 }

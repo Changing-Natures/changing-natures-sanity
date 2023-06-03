@@ -10,11 +10,6 @@ export default {
     icon: MdViewInAr,
     fields: [
         {
-            title: 'Title',
-            name: 'text',
-            type: 'string'
-        },
-        {
             title: 'Collection item',
             name: 'collectionItem',
             type: 'reference',
@@ -23,4 +18,10 @@ export default {
             validation: (Rule: any) => Rule.required(),
         }
     ],
+
+    preview: {
+        select: {
+            title: 'collectionItem.title',
+        }
+    }
 }
