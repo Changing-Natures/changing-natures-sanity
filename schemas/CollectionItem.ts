@@ -170,12 +170,42 @@ export default {
             group: ["local"]
         },
         {
-            title: "Pick up prompt",
-            name: "prompt",
-            type: "string",
-            description: "You see X on the ground. Max 80 characters",
-            validation: (Rule: any) => Rule.max(80),
+            title: "Available in Game World?",
+            name:"isAvailable",
+            type:"boolean",
+            group: ["local"]
+        },
+        {
+            title: "Story scene",
+            name: "storycutscene",
+            type: "CutsceneEditor",
+            group: ["local", "en", "fr", "de"]
+        },
+        {
+            title: "Wrong Image",
+            name: "wrongImage",
+            type: "image",
+            description:"Image to show after you approach the object. Should be wrong in an interesting way i.e. a Fan Coral made of metal.",
+            group: ["local"]
+        },
+        {
+            title: "Game data EN",
+            name: "gameDataEn",
+            type: "GameObjectData",
             group: ["local", "en"]
         }
     ],
+    preview: {
+        select: {
+            title: 'title',
+            available: 'isAvailable'
+        },
+        prepare: ({title, available}) => {
+            const isAvailable = available ? "In game ✅" : "❌"
+            return {
+                title: title,
+                subtitle: isAvailable
+            }
+        }
+    }
 }

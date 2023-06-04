@@ -5,6 +5,10 @@ import CollectionItem from "./CollectionItem"
 import Location from "./Location"
 import Slide from "./Slide"
 import Sequence from "./Sequence"
+import GameObjectData from "./components/GameObjectData"
+import CutsceneEditor from "./components/CutsceneEditor"
+import CutsceneSlide from "./components/CutsceneSlide"
+
 // ...
 import SequenceLinkBlock from "./components/blocks/SequenceLinkBlock"
 import LocationLinkBlock from "./components/blocks/LocationLinkBlock"
@@ -20,5 +24,8 @@ export const schemaTypes = [
     Slide,
     SequenceLinkBlock,
     LocationLinkBlock,
-    CollectionItemBlock
+    CollectionItemBlock,
+    GameObjectData,
+    CutsceneEditor,
+    CutsceneSlide
 ]
