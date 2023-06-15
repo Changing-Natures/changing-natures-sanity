@@ -2,7 +2,7 @@ export default {
   title: 'Cut scene slide',
   type: 'object',
   name: 'CutsceneSlide',
-  options: { collapsible: false, collapsed: false },
+  options: { collapsible: true, collapsed: false },
   fields: [
     {
       title: 'Story scene image',
@@ -12,17 +12,23 @@ export default {
     {
       title: 'Subtitle EN',
       name: 'cutsceneSubtitleEN',
-      type: 'string'
+      type: 'text'
     },
     {
       title: 'Subtitle FR',
       name: 'cutsceneSubtitleFR',
-      type: 'string'
+      type: 'text'
     },
     {
       title: 'Subtitle DE',
       name: 'cutsceneSubtitleDE',
-      type: 'string'
+      type: 'text'
     }
-  ]
+  ],
+  preview:{
+    select:{
+      title: 'cutsceneSubtitleEN',
+      media: 'cutsceneImage'
+    }
+  }
 }

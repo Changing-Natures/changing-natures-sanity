@@ -1,14 +1,7 @@
 export default {
-    title: 'Cut scene editor',
-    type: 'object',
+    title: 'Story cutscene',
+    type: 'array',
     name: 'CutsceneEditor',
     options: { collapsible: true, collapsed: false },
-    fields: [
-        {
-            title: 'Story cutscene editor',
-            name: 'cutscene',
-            type: 'array',
-            of: [{type: 'CutsceneSlide'}]
-        }
-    ]
+    of: [{type: 'CutsceneSlide'}]
 }

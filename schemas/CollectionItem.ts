@@ -176,7 +176,7 @@ export default {
             group: ["local"]
         },
         {
-            title: "Story scene",
+            title: "Story",
             name: "storycutscene",
             type: "CutsceneEditor",
             group: ["local", "en", "fr", "de"]
