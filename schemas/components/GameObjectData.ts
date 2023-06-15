@@ -39,8 +39,8 @@ export default {
         validation: (Rule: any) => Rule.max(80),
     },
     {
-        title: "Pickup message",
-        name: "pickupMessage",
+        title: "Arrival message",
+        name: "arrivemsg",
         type: "text",
         description: ". Max 240 characters",
         validation: (Rule: any) => Rule.max(240)
