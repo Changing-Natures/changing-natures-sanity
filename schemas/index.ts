@@ -9,6 +9,7 @@ import GameObjectData from "./components/GameObjectData"
 import CutsceneEditor from "./components/CutsceneEditor"
 import CutsceneSlide from "./components/CutsceneSlide"
 import testObj from "./components/testObj"
+import CollectionItemEvent from "./components/CollectionItemEvent"
 
 // ...
 import SequenceLinkBlock from "./components/blocks/SequenceLinkBlock"
@@ -29,5 +30,6 @@ export const schemaTypes = [
     GameObjectData,
     CutsceneEditor,
     CutsceneSlide,
-    testObj
+    testObj,
+    CollectionItemEvent
 ]

@@ -159,6 +159,13 @@ export default {
             group: ["imported"]
         },
         {
+            title: "Events",
+            name: 'events',
+            type: 'array',
+            of: [{ type: "CollectionItemEvent" }],
+            group: ["imported"]
+        },
+        {
             title: "Slug",
             name: "slug",
             type: "slug",
@@ -171,8 +178,8 @@ export default {
         },
         {
             title: "Available in Game World?",
-            name:"isAvailable",
-            type:"boolean",
+            name: "isAvailable",
+            type: "boolean",
             group: ["local"]
         },
         {
@@ -185,7 +192,7 @@ export default {
             title: "Wrong Image",
             name: "wrongImage",
             type: "image",
-            description:"Image to show after you approach the object. Should be wrong in an interesting way i.e. a Fan Coral made of metal.",
+            description: "Image to show after you approach the object. Should be wrong in an interesting way i.e. a Fan Coral made of metal.",
             group: ["local"]
         },
         {
@@ -200,7 +207,7 @@ export default {
             title: 'title',
             available: 'isAvailable'
         },
-        prepare: ({title, available}) => {
+        prepare: ({ title, available }) => {
             const isAvailable = available ? "In game ✅" : "❌"
             return {
                 title: title,
