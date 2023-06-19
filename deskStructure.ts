@@ -40,6 +40,7 @@ export default (S) =>
                         .showIcons(true)
                         .filter("_type == $type")
                         .params({ type: "collectionItem" })
+                        .defaultOrdering([{ field: 'isAvailable', direction: 'asc' }, { field: '_createdAt', direction: 'desc' }])
                 ),
             S.divider(),
             S.listItem()

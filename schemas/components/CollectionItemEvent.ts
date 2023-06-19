@@ -20,7 +20,7 @@ export default {
     fields: [
         {
             title: "Title (English)",
-            name: "title",
+            name: "title_en",
             type: "string",
             group: ["en"],
             readOnly: true,
@@ -58,5 +58,10 @@ export default {
             type: "text",
             readOnly: true,
         },
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'title_en'
+        }
+    }
 }
