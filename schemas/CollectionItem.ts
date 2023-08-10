@@ -71,6 +71,13 @@ export default {
             group: ["imported", "de"]
         },
         {
+            title: "Collection item ID",
+            name: 'collectionItemId',
+            type: 'number',
+            readOnly: true,
+            group: ["imported"]
+        },
+        {
             title: "Media",
             name: 'media',
             type: 'array',
@@ -136,6 +143,17 @@ export default {
         {
             title: "Emotions",
             name: 'emotions',
+            type: 'array',
+            of: [{ type: 'string' }],
+            readOnly: true,
+            group: ["imported"],
+            options: {
+                layout: 'tags'
+            }
+        },
+        {
+            title: "Practices",
+            name: 'practices',
             type: 'array',
             of: [{ type: 'string' }],
             readOnly: true,
