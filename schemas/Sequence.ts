@@ -29,6 +29,11 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
+            title: "Populate with objects",
+            type: "boolean",
+            name: "hasObjects"
+        },
+        {
             title: "Content (English)",
             name: "content_en",
             type: "slideEditor",
@@ -57,6 +62,7 @@ export default {
                 }
             ]
         },
+        
     ],
     preview: {
         select: {
