@@ -29,9 +29,10 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
-            title: "Populate with objects",
+            title: "Populate with game objects",
             type: "boolean",
-            name: "hasObjects"
+            name: "hasObjects",
+            description:"disable this to prevent objects from appearing in this sequence"
         },
         {
             title: "Content (English)",
@@ -64,6 +65,9 @@ export default {
         },
         
     ],
+    initialValue: {
+        hasObjects: true
+    },
     preview: {
         select: {
             title: 'title',

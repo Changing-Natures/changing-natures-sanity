@@ -15,12 +15,15 @@ export default {
             type: 'string'
         },
         {
-            title: 'Location',
+            title: 'Sequence',
             name: 'location',
             type: 'reference',
             weak: true,
             to: [{ type: 'sequence' }],
             validation: (Rule: any) => Rule.required(),
+            options:{
+                disableNew: true
+            }
         }
     ],
     // preview: {

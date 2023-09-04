@@ -21,6 +21,21 @@ export default {
             weak: true,
             to: [{ type: 'location' }],
             validation: (Rule: any) => Rule.required(),
+            options:{
+                disableNew: true
+            }
+        },
+        {
+            title: 'Sequence',
+            name: 'sequence',
+            type: 'reference',
+            description:'Specific sequence to send players to when they enter a location through this link',
+            weak: true,
+            to: [{ type: 'sequence' }],
+            options: {
+                // add filter here to show only seqeuences backlinked to this location 
+                disableNew: true,
+            }
         }
     ],
 }
