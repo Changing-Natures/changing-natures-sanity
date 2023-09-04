@@ -86,6 +86,13 @@ export default {
                 maxLength: 96,
             },
             validation: (Rule: any) => Rule.required()
-        }
+        },
+        {
+            title: "Location description",
+            name: "promptDescription",
+            description:'Used for A.I prompts only and not seen by players.',
+            type: "text",
+            validation: (Rule: any) => Rule.required()
+        },
     ],
 }
