@@ -63,6 +63,11 @@ export default {
                 }
             ]
         },
+        {
+            title: "Image prompt",
+            type: "text",
+            name: "image_prompt"
+        }
         
     ],
     initialValue: {
