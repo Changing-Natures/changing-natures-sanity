@@ -18,6 +18,12 @@ export default {
                 }
             ]
         },
+        {
+            title: "Startscreen audio",
+            name: "audio",
+            description:"Audio track for startscreen",
+            type: "file"
+        },
     ],
 }
 

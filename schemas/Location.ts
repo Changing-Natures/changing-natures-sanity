@@ -88,6 +88,12 @@ export default {
             validation: (Rule: any) => Rule.required()
         },
         {
+            title: "Audio",
+            name: "audio",
+            description:"Audio track for this Biome",
+            type: "file"
+        },
+        {
             title: "Location description",
             name: "promptDescription",
             description:'Used for A.I prompts only and not seen by players.',
