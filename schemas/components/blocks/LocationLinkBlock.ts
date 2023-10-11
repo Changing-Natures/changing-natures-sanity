@@ -36,6 +36,17 @@ export default {
                 // add filter here to show only seqeuences backlinked to this location 
                 disableNew: true,
             }
+        },
+        {
+            title: 'Compass Direction',
+            name: 'compass',
+            type: 'string',
+            description: 'Show an arrow to players.',
+            options:{
+                list:[
+                    'N','NE','E','SE','S','SW','W','NW'
+                ]
+            }
         }
     ],
 }
