@@ -218,6 +218,12 @@ export default {
             name: "gameDataEn",
             type: "GameObjectData",
             group: ["local", "en"]
+        },
+        {
+            title: "Game data DE",
+            name: "gameDataDe",
+            type: "GameObjectData",
+            group: ["local", "de"]
         }
     ],
     preview: {
