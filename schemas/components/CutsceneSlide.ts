@@ -25,7 +25,7 @@ export default {
       title: 'Subtitle DE',
       name: 'cutsceneSubtitleDE',
       type: 'text',
-      validation: (Rule: any) => Rule.max(180).warning('Over 180 chars! Players might not be able to read this in time.'),
+      validation: (Rule: any) => Rule.required().max(180).warning('Missing or Too Long'),
     }
   ],
   preview:{
