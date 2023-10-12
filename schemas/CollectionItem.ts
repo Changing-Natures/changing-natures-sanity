@@ -103,6 +103,22 @@ export default {
             group: ["imported"]
         },
         {
+            title: "Location",
+            name: 'location',
+            type: 'string',
+            readOnly: true,
+            group: ["imported"]
+        },
+        // RAW MATERIALS
+        {
+            title: "Raw materials (Internationalized)",
+            name: 'rawMaterialsIntl',
+            type: 'array',
+            of: [{ type: 'TagIntl' }],
+            readOnly: true,
+            group: ["imported"],
+        },
+        {
             title: 'Raw materials',
             name: 'rawMaterials',
             type: 'array',
@@ -112,6 +128,15 @@ export default {
             options: {
                 layout: 'tags'
             }
+        },
+        // PROCESSED MATERIALS
+        {
+            title: "Processed materials (Internationalized)",
+            name: 'processedMaterialsIntl',
+            type: 'array',
+            of: [{ type: 'TagIntl' }],
+            readOnly: true,
+            group: ["imported"],
         },
         {
             title: 'Processed materials',
@@ -124,12 +149,14 @@ export default {
                 layout: 'tags'
             }
         },
+        // TOPICS
         {
-            title: "Location",
-            name: 'location',
-            type: 'string',
+            title: "Topics (Internationalized)",
+            name: 'topicsIntl',
+            type: 'array',
+            of: [{ type: 'TagIntl' }],
             readOnly: true,
-            group: ["imported"]
+            group: ["imported"],
         },
         {
             title: "Topics",
@@ -142,6 +169,15 @@ export default {
                 layout: 'tags'
             }
         },
+        // EMOTIONS
+        {
+            title: "Emotions (Internationalized)",
+            name: 'emotionsIntl',
+            type: 'array',
+            of: [{ type: 'TagIntl' }],
+            readOnly: true,
+            group: ["imported"],
+        },
         {
             title: "Emotions",
             name: 'emotions',
@@ -152,6 +188,15 @@ export default {
             options: {
                 layout: 'tags'
             }
+        },
+        // PRACTICES
+        {
+            title: "Practices (Internationalized)",
+            name: 'practicesIntl',
+            type: 'array',
+            of: [{ type: 'TagIntl' }],
+            readOnly: true,
+            group: ["imported"],
         },
         {
             title: "Practices",

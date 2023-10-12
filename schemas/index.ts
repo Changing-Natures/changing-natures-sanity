@@ -10,6 +10,7 @@ import CutsceneEditor from "./components/CutsceneEditor"
 import CutsceneSlide from "./components/CutsceneSlide"
 import testObj from "./components/testObj"
 import CollectionItemEvent from "./components/CollectionItemEvent"
+import TagIntl from "./components/TagIntl"
 
 // ...
 import SequenceLinkBlock from "./components/blocks/SequenceLinkBlock"
@@ -31,5 +32,6 @@ export const schemaTypes = [
     CutsceneEditor,
     CutsceneSlide,
     testObj,
-    CollectionItemEvent
+    CollectionItemEvent,
+    TagIntl
 ]
