@@ -35,6 +35,7 @@ export default {
             name: "title",
             type: "string",
             group: ["imported", "en"],
+            validation: (Rule: any) => Rule.required(),
         },
         {
             title: "Title (French)",
@@ -47,6 +48,7 @@ export default {
             name: "title_de",
             type: "string",
             group: ["imported", "de"],
+            validation: (Rule: any) => Rule.required(),
         },
         {
             title: "Story (English)",
@@ -204,14 +206,16 @@ export default {
             title: "Story",
             name: "storycutscene",
             type: "CutsceneEditor",
-            group: ["local", "en", "fr", "de"]
+            group: ["local", "en", "fr", "de"],
+            validation: (Rule: any) => Rule.required()
         },
         {
             title: "Wrong Image",
             name: "wrongImage",
             type: "image",
             description: "Image to show after you approach the object. Should be wrong in an interesting way i.e. a Fan Coral made of metal.",
-            group: ["local"]
+            group: ["local"],
+            validation: (Rule: any) => Rule.required()
         },
         {
             title: "Game data EN",

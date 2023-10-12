@@ -13,20 +13,25 @@ export default {
       title: 'Subtitle EN',
       name: 'cutsceneSubtitleEN',
       type: 'text',
-      validation: (Rule: any) => Rule.max(180).warning('Over 180 chars! Players might not be able to read this in time.'),
+      validation: (Rule: any) => [
+        Rule.required().error('EN Missing'),
+        Rule.max(180).warning('Too long!'),
+      ]
     },
     {
       title: 'Subtitle FR',
       name: 'cutsceneSubtitleFR',
       type: 'text',
-      validation: (Rule: any) => Rule.max(180).warning('Over 180 chars! Players might not be able to read this in time.'),
+      validation: (Rule: any) => Rule.max(180).warning('Too long!'),
     },
     {
       title: 'Subtitle DE',
       name: 'cutsceneSubtitleDE',
       type: 'text',
-      validation: (Rule: any) => Rule.required().max(180).warning('Missing or Too Long'),
-    }
+      validation: (Rule: any) => [
+        Rule.required().error('DE Missing'),
+        Rule.max(180).warning('Too long!'),
+      ]}
   ],
   preview:{
     select:{
