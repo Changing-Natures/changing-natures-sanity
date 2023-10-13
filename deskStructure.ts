@@ -5,12 +5,23 @@ import {
     MdSettings,
     MdListAlt,
     MdSlideshow,
+    MdSync,
 } from "react-icons/md"
 
-export default (S) =>
+export default (S: any) =>
     S.list()
         .title("Changing Natures")
         .items([
+            S.listItem()
+                .title("Sync")
+                .icon(MdSync)
+                .child(
+                    S.editor()
+                        .id("syncDatabase")
+                        .title("Sync")
+                        .schemaType("SyncDatabase")
+                        .documentId("syncDatabase")
+                ),
             S.listItem()
                 .title("Settings")
                 .icon(MdSettings)
