@@ -266,13 +266,15 @@ export default {
             title: "Game data EN",
             name: "gameDataEn",
             type: "GameObjectData",
-            group: ["local", "en"]
+            group: ["local", "en"],
+            validation: (Rule: any) => Rule.required()
         },
         {
             title: "Game data DE",
             name: "gameDataDe",
             type: "GameObjectData",
-            group: ["local", "de"]
+            group: ["local", "de"],
+            validation: (Rule: any) => Rule.required()
         }
     ],
     preview: {
