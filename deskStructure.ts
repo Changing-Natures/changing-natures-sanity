@@ -65,13 +65,13 @@ export default (S: any) =>
                         .params({ type: "sequence" })
                 ),
             S.listItem()
-                .title("Slides")
+                .title("Story Scenes")
                 .icon(MdSlideshow)
                 .child(
                     S.documentList()
-                        .title('Slides')
+                        .title('Scenes')
                         .showIcons(true)
                         .filter("_type == $type")
-                        .params({ type: "slide" })
+                        .params({ type: "storyScene" })
                 ),
         ])

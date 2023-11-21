@@ -35,13 +35,16 @@ export default {
                     },
                 },
                 {
-                    type: 'collectionItemBlock'
-                },
-                {
                     type: 'sequenceLinkBlock'
                 },
                 {
                     type: 'locationLinkBlock'
+                },
+                {
+                    type: 'collectionItemBlock'
+                },
+                {
+                    type: 'storySceneBlock'
                 },
             ]
         }

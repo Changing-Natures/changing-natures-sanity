@@ -54,14 +54,14 @@ export default {
             title: "Story (English)",
             name: 'story_en',
             type: 'text',
-            readOnly: true,
+            readOnly: false,
             group: ["imported", "en"]
         },
         {
             title: "Story (French)",
             name: 'story_fr',
             type: 'text',
-            readOnly: true,
+            readOnly: false,
             group: ["imported", "fr"]
 
         },
@@ -69,14 +69,14 @@ export default {
             title: "Story (German)",
             name: 'story_de',
             type: 'text',
-            readOnly: true,
+            readOnly: false,
             group: ["imported", "de"]
         },
         {
             title: "Collection item ID",
             name: 'collectionItemId',
             type: 'number',
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         {
@@ -84,14 +84,14 @@ export default {
             name: 'media',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         {
             title: "Habitat",
             name: 'habitat',
             type: 'string',
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -99,14 +99,14 @@ export default {
             name: 'species',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         {
             title: "Location",
             name: 'location',
             type: 'string',
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         // RAW MATERIALS
@@ -115,7 +115,7 @@ export default {
             name: 'rawMaterialsIntl',
             type: 'array',
             of: [{ type: 'TagIntl' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -123,7 +123,7 @@ export default {
             name: 'rawMaterials',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
             options: {
                 layout: 'tags'
@@ -135,7 +135,7 @@ export default {
             name: 'processedMaterialsIntl',
             type: 'array',
             of: [{ type: 'TagIntl' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -143,7 +143,7 @@ export default {
             name: 'processedMaterials',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
             options: {
                 layout: 'tags'
@@ -155,7 +155,7 @@ export default {
             name: 'topicsIntl',
             type: 'array',
             of: [{ type: 'TagIntl' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -163,7 +163,7 @@ export default {
             name: 'topics',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
             options: {
                 layout: 'tags'
@@ -175,7 +175,7 @@ export default {
             name: 'emotionsIntl',
             type: 'array',
             of: [{ type: 'TagIntl' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -183,7 +183,7 @@ export default {
             name: 'emotions',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
             options: {
                 layout: 'tags'
@@ -195,7 +195,7 @@ export default {
             name: 'practicesIntl',
             type: 'array',
             of: [{ type: 'TagIntl' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
         },
         {
@@ -203,7 +203,7 @@ export default {
             name: 'practices',
             type: 'array',
             of: [{ type: 'string' }],
-            readOnly: true,
+            readOnly: false,
             group: ["imported"],
             options: {
                 layout: 'tags'
@@ -213,14 +213,14 @@ export default {
             title: "Date",
             name: 'date',
             type: 'datetime',
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         {
             title: "Uploader name",
             name: 'uploaderName',
             type: 'string',
-            readOnly: true,
+            readOnly: false,
             group: ["imported"]
         },
         {
